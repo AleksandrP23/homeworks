@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ДЗ 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form class="form">
+    <fieldset class="form-group">
+      <legend class="form-group__title">Ваши личные данные</legend>
+      <label class="form-group__label" for="name">Ваше имя</label>
+      <input class="form-group__input" type="text" name="name" id="name" placeholder="Имя" required>
+      <label class="form-group__label" for="age">Ваш возраст</label>
+      <input class="form-group__input" type="number" inputmode="numeric" name="age" id="age" placeholder="Возраст"
+        required>
+      <label class="form-group__label" for="tel">Ваш номер телефона</label>
+      <input class="form-group__input" type="tel" inputmode="tel" name="tel" id="tel" placeholder="Номер телефона"
+        required>
+      <label class="form-group__label" for="email">Ваша почта</label>
+      <input class="form-group__input" type="email" inputmode="email" name="email" id="email" placeholder="Почта"
+        required>
+    </fieldset>
+    <fieldset class="form-group">
+      <label class="form-group__label" for="message">Сообщение</label>
+      <textarea class="form-group__textarea" name="message" id="message" placeholder="Ваше сообщение"
+        required></textarea>
+      <label class="form-group__checkbox">
+        <input type="checkbox" name="app" value="app" required>
+        <span class="form-group__checkbox-text">Я принимаю правила</span>
+      </label>
+    </fieldset>
+    <button class="form-group__button" type="submit">Отправить</button>
+  </form>
+</body>
+
+</html>
