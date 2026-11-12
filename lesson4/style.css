@@ -55,6 +55,9 @@ body {
   cursor: pointer;
   margin-bottom: 6px;
 }
+.form-group__checkbox-input {
+  cursor: pointer;
+}
 .form-group__checkbox-text{
   font-size: 14px;
   color: #fff;
@@ -62,6 +65,5 @@ body {
 .form-group__button {
   border: none;
   padding: 5px 12px;
-  cursor: pointer;
   border-radius: 6px;
 }
