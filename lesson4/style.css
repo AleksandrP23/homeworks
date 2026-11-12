@@ -52,6 +52,7 @@ body {
 }
 .form-group__checkbox{
   display: block;
+  cursor: pointer;
   margin-bottom: 6px;
 }
 .form-group__checkbox-text{
