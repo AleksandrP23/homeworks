@@ -1,0 +1,124 @@
+body {
+  font-family: sans-serif;
+  background-color: #20b2aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.form {
+  max-width: 360px;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 26px;
+}
+
+.form-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.form-group__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.form-group__label{
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+.form-group__textarea{
+  resize: vertical;
+  max-height: 200px;
+  min-height: 60px;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  margin-bottom: 24px;
+}
+.form-group__input{
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+.form-group__checkbox{
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+.form-group__checkbox-input {
+  cursor: pointer;
+  position: absolute;
+  appearance: none;
+  outline: none;
+}
+.form-group__checkbox-input::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.form-group__checkbox-input:checked:before {
+  background: url(../img/check-icon.svg) no-repeat center, #fa6833;
+}
+.form-group__checkbox-text {
+  font-size: 14px;
+  color: #fff;
+  padding-left: 22px;
+}
+.form-group__button {
+  border: none;
+  padding: 6px 18px;
+  border-radius: 6px;
+  background-color: #ff7f50;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+}
+
+.form-group__button:not(:disabled):active {
+  background-color: #fa6833;
+}
+
+.form-group__button:hover {
+  opacity: 0.7;
+}
+
+.form-group__button:disabled,
+.form-group__checkbox-input:disabled:before, 
+.form-group__checkbox-input:disabled + .form-group__checkbox-text{
+  opacity: 0.4;
+  cursor: default;
+}
+
+.form-group__input:focus-visible,
+.form-group__textarea:focus-visible,
+.form-group__button:focus-visible,
+.form-group__checkbox-input:focus-visible:before {
+  outline: 2px solid #fa6833;
+  outline-offset: 1px;
+}
+
+.form-group__input:disabled,
+.form-group__textarea:disabled {
+  opacity: 0.7;
+}
