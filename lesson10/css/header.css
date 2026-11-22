@@ -1,0 +1,24 @@
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d3cbd9;
+}
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+.phone-tel {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2c332f;
+  transition: color 0.3s ease-in-out;
+}
+.phone-tel:hover {
+  color: #3596ed;
+}
