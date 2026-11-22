@@ -3,7 +3,7 @@
   margin-bottom: 120px;
 }
 
-.article-section {
+.article-section:not(:last-child) {
   margin-bottom: 80px;
 }
 
@@ -35,7 +35,9 @@
   color: #535755;
   margin-bottom: 20px;
 }
-
+.article-text:last-child {
+  margin-bottom: 0;
+}
 .article-decor-wrapper {
   position: relative;
 }
